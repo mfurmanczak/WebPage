@@ -321,18 +321,18 @@ html {
     border-top: 2.5px solid #bf923f;
     display: none;
 }
-.scrollToTopBtn img{
-    width: 25%;
-}
 /* scroll button styles */
 .scrollToTopBtn {
     cursor: pointer;
-    background: none;
-    border: none;
+    display: block;
+
+    width: 3.5%;
+    background: 0;
+    border: 0;
     /* place it at the bottom right corner */
     position: fixed;
-    bottom: 15%;
-    right: 1%;
+    bottom: 10%;
+    right: 2%;
     /* keep it at the top of everything else */
     z-index: 100;
     /* hide with opacity */
@@ -445,10 +445,7 @@ html {
     }
      /* .scrollToTopBtn styles for mobile */
     .scrollToTopBtn {
-        bottom: 3%;
-        right: 3%;
-        width: 60px;
-        line-height: 60px;
+        display: none;
     }
     /* hide standard footer */
     #footer {

@@ -233,18 +233,18 @@ html {
     margin-left: 45%;
     margin-right: 45%;
 }
-.scrollToTopBtn img{
-    width: 25%;
-}
 /* scroll button styles */
 .scrollToTopBtn {
     cursor: pointer;
-    background: none;
-    border: none;
+    display: block;
+
+    width: 3.5%;
+    background: 0;
+    border: 0;
     /* place it at the bottom right corner */
     position: fixed;
-    bottom: 15%;
-    right: 1%;
+    bottom: 10%;
+    right: 2%;
     /* keep it at the top of everything else */
     z-index: 100;
     /* hide with opacity */
@@ -256,8 +256,7 @@ html {
 }
 .showBtn {
     opacity: 1;
-    transform: translateY(0);
-}
+   
 /* hide mobile contact */
 #mobilecontact {
     display: none;
