@@ -1,0 +1,352 @@
+/* default rules */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+}
+
+/* hide scrollbar  */
+body::-webkit-scrollbar {
+    display: none; /* for Chrome, Safari, and Opera */
+}
+body {
+    -ms-overflow-style: none; /* for Internet Explorer, Edge */
+    scrollbar-width: none; /* for Firefox */
+    overflow-y: scroll; 
+    overflow-x: hidden;
+    background-color:#262626 ;
+}
+/* smooth scrolling effect */
+html {
+    scroll-behavior: smooth;
+}
+
+/* navigation styles */
+/* navigation bar styles */
+#navbar {
+    /* font and color for navigation bar */
+    color: #bf923f;
+    font-weight: lighter;
+    font-size: x-large;
+    background-color: #181818;
+    /* padding and border settings */
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 100%;
+}
+/* navigation list styles */
+#navbar ul {
+    /* allignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* list styling */
+    list-style: none;   
+}
+/* navigation list elements styles */
+#navbar ul li {
+    /* padding */
+    padding-right: 5%;
+    padding-left: 5%;
+    /* adding pipe at the end of each item */
+    border-right: 3px solid #a2a2a2;
+} 
+/* remove border for the last element */
+#navbar ul li:last-child {
+    border-right: none;
+}
+/* underlines in navigation bar styles and animation */
+/* underline styles */
+#navbar a {
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+    scroll-margin-top: 2rem;
+}
+/* underline fade-in animation */
+#navbar a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 0.1em;
+    background-color: #a2a2a2;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+}
+/* animate when hovering or focusing on the link */
+#navbar a:hover::after,
+#navbar a:focus::after {
+    opacity: 1;
+    transform: translate3d(0, 0.2em, 0);
+}
+#navbar a::after {
+    transform: scale(0);
+    transform-origin: center;
+}
+#navbar a:hover::after,
+#navbar a:focus::after {
+    transform: scale(1);
+}
+
+/* navigation bar and contact links styles */
+#navbar a:link,
+#contact a:link {
+    color: #a2a2a2;
+    text-decoration: none;
+}
+#navbar a:visited,
+#contact a:visited {
+    color: #a2a2a2;
+}
+#navbar a:hover,
+#contact a:hover {
+    color: #bf923f;
+}
+/* sticky class to add to navbar when scrolling down the website  */
+.sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    top:0;
+    width: 100%;
+    z-index: 100;
+}
+.sticky + main {
+    margin-top: 0em;
+}
+.wrapper{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 25%;
+    scroll-margin-top: 11.2vh;
+    border-top: 2.5px solid #bf923f;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-gap: 3%;
+}
+/* titles class */
+.titles{
+    font-size: 50px;
+    color: #c4c4c4;
+    display: flex;
+    justify-content: center;
+    align-self: flex-start;
+}
+.event{
+    background-color: #181818;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    padding: 2%;
+    scroll-margin-top: 20vh;
+}
+.event h1{
+    color: #bf923f;
+}
+.event .content{
+    color: #d4d4d4;
+    display: flex;
+    flex-direction: column;
+    padding-left: 5%;
+}
+.event img{
+    width: 100%;
+}
+.desc{
+    padding-bottom: 5%;
+}
+.buyTicketBtn {
+    background-color: #bf923f;
+    justify-items: center;
+    align-self: flex-end;
+    line-height: 1.5em;
+    width: 6em;
+    font-size: xx-large;
+    /* place it at the bottom right corner */
+    padding: 1%;
+}
+.event a:link,
+.event a:visited,
+.event a:hover{
+    text-align: center;
+    text-decoration: none;
+    color: #181818;
+}
+/* basic styles and layout */
+#contact {
+    display: grid;
+    grid-template-columns: 40% auto 40%;
+    justify-items: center;
+    align-items: center;
+}
+
+/* images in contact section styles */
+#contact #left img,
+#contact #right img {
+    width: 1.5em;
+    height: 1.5em;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+#socials img {
+    width: 2.6em;
+    height: 2.6em;
+}
+/* logo in contact section styles */
+#contact #logo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+/* contact section styles */
+#contact #left,
+#contact #right {
+    display: flex;
+    align-content: flex-end;
+    font-size: xx-large;
+    height: 30%;
+    margin: 5%;
+}
+/* contact section styles to align to right */
+#contact #left {
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    justify-self: flex-end;
+}
+/* contact section styles to align to left */
+#contact #right {
+    flex-direction: row;
+    flex-wrap: wrap-reverse;
+    justify-self: flex-start;
+}
+#contactWrapper{
+    padding: 5%;
+}
+/* social media styles */
+#socials {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #a2a2a2;
+    margin-left: 45%;
+    margin-right: 45%;
+}
+.scrollToTopBtn {
+    background-color: #bf923f;
+    border: none;
+    color: #181818;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.4em;
+    width: 1.4em;
+    border-radius: 50%;
+    font-size: xx-large;
+  
+    /* place it at the bottom right corner */
+    position: fixed;
+    bottom: 15%;
+    right: 3%;
+    /* keep it at the top of everything else */
+    z-index: 100;
+    /* hide with opacity */
+    opacity: 0;
+    /* also add a translate effect */
+    transform: translateY(100px);
+    /* and a transition */
+    transition: all 0.5s ease;
+}
+.showBtn {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* hide mobile contact */
+#mobilecontact {
+    display: none;
+}
+
+/* footer styles */
+#footer {
+    padding: 0.5%;
+    background-color: #181818;
+    color: #a2a2a2;
+    border-top: 2.5px solid #bf923f;
+}
+#footer p,
+#footer h1 {
+    font-family:'Courier New', Courier, monospace ;
+    background: none;
+    display: flex;
+    justify-content: center;
+}
+#footer p {
+    font-size: xx-small;
+}
+#footer h1 {
+    font-size: x-small;
+}
+
+#mobilefooter {
+    background-color: #181818;
+    color: #a2a2a2;
+    border-top: 2.5px solid #bf923f;
+    display: none;
+}
+  
+/* for mobile devices portrait + landscape*/
+@media only screen 
+  and (max-device-width: 480px)
+ {
+
+    /* hide normal contact section */
+    #contact,
+    #socials {
+        display: none;
+    }
+
+    /* contact for mobiles */
+    #mobilecontact {
+        display: grid;
+        grid-template-columns: auto 35% auto 35% ;
+        height: 100%;
+        justify-content: center;
+        border: 0;
+        flex-grow: 1;
+    }
+    #mobilecontact a:link {
+        color: #a2a2a2;
+        text-decoration: none;
+    }
+    #mobilecontact a:visited {
+        color: #a2a2a2;
+    }
+    #mobilecontact img {
+        padding-bottom: 5%;
+        width: 60%;
+        justify-self: flex-end;
+        align-self: center;
+    }
+    #mobilecontact #telephones,
+    #mobilecontact #mailing,
+    .socialmedia {
+        padding-bottom: 5%;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-self: center;
+        justify-self: flex-start;
+        font-size: xx-large;
+    }
+    /* hide standard footer */
+    #footer {
+        display: none;
+    }
+    /* show mobile footer */
+    #mobilefooter {
+        display: flex;
+        justify-content: center;
+        background-color: #181818;
+        border: 0;
+        font-size: x-small;
+    }
+}
