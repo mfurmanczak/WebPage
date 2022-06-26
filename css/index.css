@@ -360,9 +360,6 @@ html {
     #normalvid {
         display: none;
     }
-    #navbar {
-        display:none;
-    }
     /* about styles */
     #about {
         font-size: 50px;
@@ -377,6 +374,7 @@ html {
     }
     #about h1 {
         font-size: 50%;
+        text-align: center;
     }
     #about #welcome{
         font-size: 30%;
