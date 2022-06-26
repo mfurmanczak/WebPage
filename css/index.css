@@ -444,8 +444,11 @@ html {
         font-size: xx-large;
     }
      /* .scrollToTopBtn styles for mobile */
-    .scrollToTopBtn {
-        display: none;
+     .scrollToTopBtn {
+        bottom: 3%;
+        right: 3%;
+        width: 60px;
+        line-height: 60px;
     }
     /* hide standard footer */
     #footer {
