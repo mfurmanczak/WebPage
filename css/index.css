@@ -321,24 +321,18 @@ html {
     border-top: 2.5px solid #bf923f;
     display: none;
 }
-
+.scrollToTopBtn img{
+    width: 25%;
+}
 /* scroll button styles */
 .scrollToTopBtn {
-    background-color: #bf923f;
-    border: none;
-    color: #181818;
     cursor: pointer;
-    font-size: 18px;
-    line-height: 1.4em;
-    align-items: center;
-    width: 1.4em;
-    border-radius: 50%;
-    font-size: xx-large;
-  
+    background: none;
+    border: none;
     /* place it at the bottom right corner */
     position: fixed;
     bottom: 15%;
-    right: 3%;
+    right: 1%;
     /* keep it at the top of everything else */
     z-index: 100;
     /* hide with opacity */
