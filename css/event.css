@@ -122,9 +122,6 @@ html {
     padding-bottom: 15%;
     scroll-margin-top: 11.2vh;
     border-top: 2.5px solid #bf923f;
-    display: grid;
-    grid-template-columns: 100%;
-    grid-gap: 3%;
 }
 /* titles class */
 .titles{
@@ -134,12 +131,20 @@ html {
     justify-content: center;
     align-self: flex-start;
 }
+#eventWrapper{
+    display: grid;
+    grid-template-columns: 95%;
+    justify-content: center;
+    grid-gap: 3%;
+}
 .event{
     background-color: #181818;
     display: grid;
     grid-template-columns: 40% 60%;
     padding: 2%;
     scroll-margin-top: 20vh;
+    height: 90%;
+    flex-grow: 1;
 }
 .event h1{
     color: #bf923f;
@@ -154,18 +159,23 @@ html {
     width: 100%;
 }
 .desc{
-    padding-bottom: 5%;
+    padding-bottom: 2%;
+}
+.buttonContainer{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1;
 }
 .buyTicketBtn {
     background-color: #bf923f;
-    justify-items: center;
-    align-self: flex-end;
     line-height: 1.5em;
     width: 6em;
     font-size: xx-large;
     /* place it at the bottom right corner */
     padding: 1%;
 }
+
 .event a:link,
 .event a:visited,
 .event a:hover{
