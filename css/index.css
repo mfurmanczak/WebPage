@@ -371,6 +371,9 @@ html {
 @media only screen
     and (max-device-width: 1520px)
 {
+    #eventWrapper{
+        background-color: #262626;
+    }
     .ParallaxVideo{ 
         height: 100vh;
         width: 100%;
@@ -391,9 +394,6 @@ html {
 @media only screen 
   and (max-device-width: 480px)
  {
-    #eventWrapper{
-        background-color: #262626;
-    }
     .ParallaxVideo{ 
         max-height: 30vh;
         width: 100%;
