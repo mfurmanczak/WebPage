@@ -123,13 +123,13 @@ html {
     display: flex;
     justify-content: center;
 }
-.ParallaxVideo video{ 
+.ParallaxVideo video { 
     position: fixed;
     top:0;
     z-index: -999;
     min-width: 100%;
 }
-.ParallaxVideo img{ 
+.ParallaxVideo img { 
     position: fixed;
     top: 17.5vh;
     width:30%;
@@ -178,7 +178,7 @@ html {
 }
 /* motto and about section end styles */
 #welcome {
-    padding-top: 0%;
+    padding-top: 0;
     padding-bottom: 2%;
 }
 #invite {
@@ -192,10 +192,10 @@ html {
     grid-gap: 2%;
     grid-template-columns: 33% 33% 33%;
 }
-#eventWrapper{
+#eventWrapper {
     background: 0;
 }
-.hidelogo{
+.hidelogo {
     display: none;
 }
 /* event class styles */
@@ -203,7 +203,6 @@ html {
 .event {
     box-shadow: 5px 5px 10px black; 
     transition: all 0.6s ease-in-out;
-    padding-bottom: 3%;
 }
 .event:hover {
     transform: scale(1.05);
@@ -219,6 +218,13 @@ html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
 }
+.event{
+    padding-bottom: 0%;
+}
+.event h1 {
+    line-height: 1em;
+    overflow: hidden;
+}
 .event::-webkit-scrollbar,
 .event h1::-webkit-scrollbar,
 .event p::-webkit-scrollbar { 
@@ -227,7 +233,7 @@ html {
 /* events images styles */
 .event img {
     width: 100%;
-    height: 50%;
+    height: 60%;
 }
 /* events links styles */
 .event a {
