@@ -150,6 +150,8 @@ html {
 }
 .event h1{
     color: #bf923f;
+    line-height: 1em;
+    padding-bottom: 2%;
 }
 .event .content{
     color: #d4d4d4;
