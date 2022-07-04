@@ -140,6 +140,7 @@ html {
     padding-right: 5%;
     padding-bottom: 5%;
     border-top: 2.5px solid #bf923f;
+    scroll-margin-top: 10vh;
 }
 /* titles class */
 .titles{
