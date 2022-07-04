@@ -33,6 +33,7 @@ html {
     padding-top: 1%;
     padding-bottom: 1%;
     width: 100%;
+    border-bottom: 2.5px solid #bf923f;
 }
 /* navigation list styles */
 #navbar ul {
