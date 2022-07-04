@@ -196,9 +196,11 @@ html {
     grid-template-columns: 33% 33% 33%;
 }
 #eventWrapper{
-    background-color: #181818;  
+    background: 0;
 }
-
+.hidelogo{
+    display: none;
+}
 /* event class styles */
 /* event shadow and animation style*/
 .event {
@@ -389,6 +391,9 @@ html {
 @media only screen 
   and (max-device-width: 480px)
  {
+    #eventWrapper{
+        background-color: #262626;
+    }
     .ParallaxVideo{ 
         max-height: 30vh;
         width: 100%;

@@ -25,6 +25,7 @@ document.addEventListener("scroll", handleScroll);
 
 
 var navbar = document.getElementById("navbarWrapper");
+var logo = document.getElementById("logo");
 var sticky = navbar.offsetTop;
 
 // Add the sticky class to the navbar when you reach its scroll position. 
@@ -32,8 +33,10 @@ var sticky = navbar.offsetTop;
 function addSticky() {
   if (window.pageYOffset >= sticky - 150) {
     navbar.classList.add("sticky");
+    logo.classList.add("hidelogo");
   } else {
     navbar.classList.remove("sticky");
+    logo.classList.remove("hidelogo");
   }
 }
 document.addEventListener("scroll", addSticky);
