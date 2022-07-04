@@ -120,7 +120,6 @@ html {
 #mobilevid {
     display: none;
 }
-
 .ParallaxVideo{ 
     height: 100vh;
     width: 100%;
@@ -160,6 +159,7 @@ html {
 /* about section styles */
 #aboutWrapper{
     background-color:#262626;
+    border: 0;
 }
 #about {
     justify-content: center;
@@ -367,25 +367,34 @@ html {
 }
 /* for mobile devices portrait + landscape*/
 @media only screen
-    and (max-device-width: 1300px)
+    and (max-device-width: 1520px)
 {
-        /* video styles */
-        #mobilevid {
-            display: flex;
-            width: 100%;
-            top: 0;
-        }
-        /* hide standard navbar */
-        .ParallaxVideo video{
-            display: none;
-        }
-        .ParallaxVideo{
-            position: absolute;
-        }
+    .ParallaxVideo{ 
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    /* video styles */
+    #mobilevid {
+        display: flex;
+        width: 100%;
+        top: 0;
+    }
+    /* hide standard navbar */
+    #normalvid {
+        display: none;
+    }
 }    
 @media only screen 
   and (max-device-width: 480px)
  {
+    .ParallaxVideo{ 
+        max-height: 30vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
     /* about styles */
     #about {
         font-size: 50px;
