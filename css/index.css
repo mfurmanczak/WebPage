@@ -126,7 +126,6 @@ html {
 }
 .ParallaxVideo video{ 
     position: fixed;
-    justify-content: center;
     top:0;
     z-index: -999;
     width: 100%;
@@ -368,7 +367,7 @@ html {
         width: 100%;
     }
     /* hide standard navbar */
-    #normalvid {
+    .ParallaxVideo video{
         display: none;
     }
     /* about styles */
