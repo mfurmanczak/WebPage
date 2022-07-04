@@ -115,15 +115,21 @@ html {
 .sticky + main {
     margin-top: 0em;
 }
-
 /* video styles */
-#normalvid {
-    display: flex;
-    width: 100%;
-    justify-self: center;
-}
 #mobilevid {
     display: none;
+}
+
+.ParallaxVideo{ 
+    width: 100vw;
+    height: 85vh;
+}
+.ParallaxVideo video{ 
+    position: fixed;
+    justify-content: center;
+    top:0;
+    z-index: -999;
+    width: 100%;
 }
 
 /* sections wrapper */
@@ -145,6 +151,9 @@ html {
 }
 
 /* about section styles */
+#aboutWrapper{
+    background-color:#262626;
+}
 #about {
     justify-content: center;
     color: #a2a2a2;
@@ -236,6 +245,9 @@ html {
     grid-template-columns: 40% auto 40%;
     justify-items: center;
     align-items: center;
+}
+#contactWrapper{
+    background-color:#262626;
 }
 
 /* images in contact section styles */
@@ -346,7 +358,6 @@ html {
     opacity: 1;
     transform: translateY(0);
 }
-  
 /* for mobile devices portrait + landscape*/
 @media only screen 
   and (max-device-width: 480px)
