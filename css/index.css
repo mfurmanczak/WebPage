@@ -194,6 +194,9 @@ html {
 #eventWrapper {
     background: 0;
 }
+.eventoverlay{
+    opacity: 50%;
+}
 .hidelogo {
     display: none;
 }
@@ -414,7 +417,9 @@ html {
         padding: 5%;
         display: grid;
         grid-template-columns: auto auto;
-        font-size: 25%;
+    }
+    #about ul li{
+        line-height: 1.5em;
     }
     #about h1 {
         font-size: 50%;
