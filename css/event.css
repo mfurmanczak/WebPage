@@ -136,8 +136,10 @@ html {
     display: grid;
     grid-template-columns: 95%;
     justify-content: center;
-    grid-gap: 3%;
+    grid-gap: 5%;
     border-top: 0;
+    padding-bottom: 8%;
+    padding-top: 8%;
 }
 .event{
     background-color: #181818;
