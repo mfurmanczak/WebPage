@@ -140,13 +140,14 @@ html {
     border-top: 0;
     padding-bottom: 8%;
 }
+
 .event{
     background-color: #181818;
     display: grid;
     grid-template-columns: 40% 60%;
     padding: 2%;
     scroll-margin-top: 20vh;
-    height: 90%;
+
     flex-grow: 1;
 }
 .event h1{
@@ -357,6 +358,7 @@ html {
     #mobilefooter {
         display: flex;
         justify-content: center;
+        align-self: flex-end;
         background-color: #181818;
         border: 0;
         font-size: x-small;
