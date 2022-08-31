@@ -1,45 +1,73 @@
 <!doctype html>
-<html lang="pl-PL">
+<html lang="en">
 <head>
    <meta charset="UTF-8">
    <title>Party Up: Home</title>
-   <link rel="stylesheet" type="text/css" href = "css/event.css">
+   <link rel="stylesheet" type="text/css" href = "css/index.css">
    <link rel="icon" href="resources/images/favicon.png">
    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap'); </style>
+    @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400&display=swap');
+    </style>
 </head>
 <body>
+    
+<div class="ParallaxVideo" id="normalvid">
+    <img id="logo" src="resources/images/icon.png">
+    <video autoplay loop muted>
+        <source src="resources/movies/favmovie.mp4" type="video/mp4" />
+    </video>
+</div>
 
 <div id="navbarWrapper">
     <nav id="navbar">
         <ul>
-            <li><a href="index.html#aboutWrapper">O nas</a></li>
-            <li><a href="index.html#eventWrapper">Strona główna</a></li>
-            <li><a href="#contactWrapper">Kontakt</a></li>
-            <li><a href="/events_eng.html"><img src="/resources/images/flags/english.png"></a></li>
+            <li><a href="#aboutWrapper">About us</a></li>
+            <li><a href="#eventWrapper">Events</a></li>
+            <li><a href="/events_eng.html">Buy tickets</a></li>
+            <li><a href="#contactWrapper">Contact</a></li>
+            <li><a href="/index.html#aboutWrapper"><img src="/resources/images/flags/polishflag.png"></a></li>
         </ul>
     </nav>
 </div>
-
-<div class="wrapper" id="eventWrapper">
-
-
-    <div class="event" id="2">
-        <img src="resources/images/events/ump.jpg">
-        <div class="content">
-            <h1 class="titles">18 października, zapraszamy na imprezę integracyjną UMP</h1>
-            <p class="desc">Studenci wydziałów Lekarskiego, Medycznego, Farmaceutycznego i Nauk o Zdrowiu łączcie się!
-                PARTY UP ma zaszczyt zaprosić was na pierwszą z tego cyklu ZAMKNIĘTĄ Imprezę Integracyjną UMP.</p>
-            <div class="buttonContainer"><a class="buyTicketBtn" background-color="red" target="_blank" href="https://www.facebook.com/partyup.me">Kup Bilet!</a></div>
-        </div>
-    </div>    
-
+    
+<main>
+<div class="wrapper" id="aboutWrapper">
+    <h1 class="titles">About us</h1>
+    <div id="about">
+        <h1>Party Up - people with passion and ambition!</h1>
+        <p id="welcome">In our firm we focus on high quality of services.</p>
+        <p>We specialize in organising events such as:</p>
+            <ul>
+                <li>themed parties,</li> 
+                <li>bachelor parties,</li> 
+                <li>festivals,</li> 
+                <li>concerts,</li> 
+                <li>exhibitions,</li> 
+                <li>fairs,</li> 
+                <li>company events.</li>
+            </ul>
+        <h1 id="invite">Let's Party!</h1>
+    </div>
 </div>
 
-<img class="scrollToTopBtn" src="./resources/images/scrollBtn.png">
+<div class="wrapper" id="eventWrapper">
+    <h1 class="titles">Events</h1>
+    <div id="events">
 
-<div class="wrapper" id="contactWrapper">
-    <h1 class="titles">Kontakt</h1>
+        <div class="event"><a href="events_eng.html#2">
+            <img src="resources/images/events/ump.jpg">
+            <h1>PUMS integration party</h1>
+            <p>Event will take place on 18th of October.</p>
+        </a></div>
+
+    </div>
+</div>
+    
+        
+    <img class="scrollToTopBtn" src="./resources/images/scrollBtn.png">
+
+    <div class="wrapper" id="contactWrapper">
+    <h1 class="titles">Contact</h1>
     <div id="contact">
         <div id="left">
             <div id="phone">
@@ -82,7 +110,7 @@
         <a class ="socialmedia" href="https://www.instagram.com/partyup.me/">@partyup.me</a>
     </div>
 </div>
-
+</main>
 
 
 
@@ -94,6 +122,7 @@
 <footer id="mobilefooter">
     <p>© Copyright 2022 Party Up sp. z o.o. Website by Mikolaj Furmanczak</p>
 </footer>
+
 <script src="scripts/allscripts.js"></script>
 </body>
 </html>

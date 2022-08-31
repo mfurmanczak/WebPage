@@ -63,6 +63,11 @@ html {
     position: relative;
     padding: 0.2em 0;
 }
+#navbar img {
+    display: flex;
+    justify-self: flex-end;
+    width: 4vw;
+}
 /* underline fade-in animation */
 #navbar a::after {
     content: '';
