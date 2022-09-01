@@ -65,9 +65,9 @@ html {
     scroll-margin-top: 2rem;
 }
 #navbar img {
-    display: flex;
-    justify-self: flex-end;
-    width: 4vw;
+    display: block;
+    padding: 0.2em 0;
+    width: 2.8vw;
 }
 /* underline fade-in animation */
 #navbar a::after {
