@@ -225,9 +225,6 @@ html {
     -ms-overflow-style: none;  /* Internet Explorer 10+ */
     scrollbar-width: none;
 }
-.event{
-    padding-bottom: 0%;
-}
 .event h1 {
     line-height: 1em;
     overflow: hidden;
@@ -240,7 +237,6 @@ html {
 /* events images styles */
 .event img {
     width: 100%;
-    height: 60%;
 }
 /* events links styles */
 .event a {
@@ -447,7 +443,7 @@ html {
         border: 0;
     }
     .event img {
-        height: 70%;
+        height: 81%;
     }
     .event h1 {
         padding-bottom: 2%;
