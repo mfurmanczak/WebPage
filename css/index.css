@@ -194,7 +194,7 @@ html {
     justify-content: center;
     display: grid;
     grid-gap: 2%;
-    grid-template-columns: 33% 33% 33%;
+    grid-template-columns: 45% 45%;
 }
 #eventWrapper {
     background: 0;
@@ -212,7 +212,7 @@ html {
     transition: all 0.6s ease-in-out;
 }
 .event:hover {
-    transform: scale(1.05);
+    transform: scale(0.95);
 }
 /* events text styles */
 .event,
@@ -439,19 +439,17 @@ html {
     /* events grid for mobile styles */
     #events {
         grid-template-columns: 90%;
-        overflow: scroll;
+        overflow: hidden;
         border: 0;
     }
     .event img {
         height: 81%;
     }
     .event h1 {
-        padding-bottom: 2%;
+        padding-bottom: 4%;
         font-size: 50px;
     }
-    .event p {
-        display: none;
-    }
+   
 
     /* hide normal contact section */
     #contact,

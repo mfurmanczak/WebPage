@@ -149,7 +149,7 @@ html {
 .event{
     background-color: #181818;
     display: grid;
-    grid-template-columns: 48% 52%;
+    grid-template-columns: 56% 44%;
     padding: 2%;
     scroll-margin-top: 20vh;
     flex-grow: 1;
@@ -180,13 +180,14 @@ html {
     justify-content: flex-end;
     flex-grow: 1;
 }
-.buyTicketBtn {
+.buyTicketBtn{
     background-color: #bf923f;
     line-height: 1.5em;
     width: 6em;
     font-size: xx-large;
     /* place it at the bottom right corner */
     padding: 3%;
+    margin-right: 5%;
 }
 
 .event a:link,
@@ -212,12 +213,12 @@ html {
     padding-left: 1%;
     padding-right: 1%;
 }
-#socials img {
+#socials img{
     width: 2.6em;
     height: 2.6em;
 }
 /* logo in contact section styles */
-#contact #logo img {
+#contact #logo img{
     display: block;
     width: 100%;
     height: 100%;
@@ -225,7 +226,7 @@ html {
 }
 /* contact section styles */
 #contact #left,
-#contact #right {
+#contact #right{
     display: flex;
     align-content: flex-end;
     font-size: xx-large;
@@ -233,13 +234,13 @@ html {
     margin: 5%;
 }
 /* contact section styles to align to right */
-#contact #left {
+#contact #left{
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
     justify-self: flex-end;
 }
 /* contact section styles to align to left */
-#contact #right {
+#contact #right{
     flex-direction: row;
     flex-wrap: wrap-reverse;
     justify-self: flex-start;
@@ -248,7 +249,7 @@ html {
     padding: 5%;
 }
 /* social media styles */
-#socials {
+#socials{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -257,7 +258,7 @@ html {
     margin-right: 45%;
 }
 /* scroll button styles */
-.scrollToTopBtn {
+.scrollToTopBtn{
     cursor: pointer;
     display: block;
 
@@ -277,24 +278,24 @@ html {
     /* and a transition */
     transition: all 0.5s ease;
 }
-.showBtn {
+.showBtn{
     opacity: 1;
     transform: translateY(0);
 }
 /* hide mobile contact */
-#mobilecontact {
+#mobilecontact{
     display: none;
 }
 
 /* footer styles */
-#footer {
+#footer{
     padding: 0.5%;
     background-color: #181818;
     color: #a2a2a2;
     border-top: 2.5px solid #bf923f;
 }
 #footer p,
-#footer h1 {
+#footer h1{
     font-family:'Courier New', Courier, monospace ;
     background: none;
     display: flex;
@@ -303,11 +304,11 @@ html {
 #footer p {
     font-size: xx-small;
 }
-#footer h1 {
+#footer h1{
     font-size: x-small;
 }
 
-#mobilefooter {
+#mobilefooter{
     background-color: #181818;
     color: #a2a2a2;
     border-top: 2.5px solid #bf923f;
@@ -319,22 +320,26 @@ html {
   and (max-device-width: 480px)
  {
     .event {
-        display: block;
+        display: flex;
+        flex-direction: column;
         font-size: xx-large;
-        padding-bottom: 10%;
+        padding-bottom: 8%;
     }
     .event img{
-        height: 27.5vh;
+        width: 95%;
         margin-bottom: 5%;
+        display: flex;
+        justify-self: flex-end;
+        align-self: center;
     }
     /* hide normal contact section */
     #contact,
-    #socials {
+    #socials{
         display: none;
     }
 
     /* contact for mobiles */
-    #mobilecontact {
+    #mobilecontact{
         display: grid;
         grid-template-columns: auto 35% auto 35% ;
         height: 100%;
@@ -342,14 +347,14 @@ html {
         border: 0;
         flex-grow: 1;
     }
-    #mobilecontact a:link {
+    #mobilecontact a:link{
         color: #a2a2a2;
         text-decoration: none;
     }
-    #mobilecontact a:visited {
+    #mobilecontact a:visited{
         color: #a2a2a2;
     }
-    #mobilecontact img {
+    #mobilecontact img{
         padding-bottom: 5%;
         width: 60%;
         justify-self: flex-end;
@@ -357,7 +362,7 @@ html {
     }
     #mobilecontact #telephones,
     #mobilecontact #mailing,
-    .socialmedia {
+    .socialmedia{
         padding-bottom: 5%;
         padding-left: 5%;
         padding-right: 5%;
@@ -366,11 +371,11 @@ html {
         font-size: xx-large;
     }
     /* hide standard footer */
-    #footer {
+    #footer{
         display: none;
     }
     /* show mobile footer */
-    #mobilefooter {
+    #mobilefooter{
         display: flex;
         justify-content: center;
         align-self: flex-end;
@@ -378,7 +383,7 @@ html {
         border: 0;
         font-size: x-small;
     }
-    .scrollToTopBtn {
+    .scrollToTopBtn{
         bottom: 3%;
         right: 3%;
         width: 60px;
