@@ -237,6 +237,7 @@ html {
 /* events images styles */
 .event img {
     width: 100%;
+
 }
 /* events links styles */
 .event a {
@@ -443,7 +444,7 @@ html {
         border: 0;
     }
     .event img {
-        height: 81%;
+        width: 100%;
     }
     .event h1 {
         padding-bottom: 4%;
