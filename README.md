@@ -1,2 +1,2 @@
 Website link:
-www.partyup.me
+https://mfurmanczak.github.io/party-up/
